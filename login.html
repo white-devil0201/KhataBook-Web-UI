@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>Mobile Number Verification</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/intlTelInput.css">
+
+</head>
+<body>
+	<header>
+		<div class="logo">
+			<i class="fa fa-book" style="font-size:40px;color:red"></i>
+			<i><b>Khata</b>Book</i>
+		</div>
+		
+		
+		
+	</header>
+
+	<section>
+		<div class="imgBx">
+			<img src="img/bg.jfif">
+		</div>
+		<div class="contentBx">
+			<div class="formBx">
+				<h2>Mobile number verification</h2>
+				<form>
+					<div class="inputBX">
+						<span>Mobile Number</span>
+						<input type="tel" name="" id="phone">
+					</div>
+					<div class="inputBX">
+						<a href="otp.html">
+							<input type="button" value="Get OTP" name="">
+						</a>
+					</div>
+				</form>
+				<script type="text/javascript" src="js/jquery.min.js"></script>
+				<script type="text/javascript" src="js/intlTelInput.js"></script>
+				<script type="text/javascript" src="js/intlTelInput.min.js"></script>
+				<script>
+					var input = document.querySelector("#phone");
+						intlTelInput(input, {
+						utilsScript: "js/utils.js"
+						});
+				</script>
+			</div>
+			
+		</div>
+	</section>
+</body>
+</html>
